@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geeya.wifitv">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:name=".WiFiTVApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/OrangeAppTheme">
+        <activity
+            android:name=".ui.activity.LoadingActivity"
+            android:theme="@style/NoTitleFullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.GuideActivity"
+            android:theme="@style/NoTitleFullScreen"></activity>
+        <activity
+            android:name=".ui.activity.MainTabActivity"
+            android:theme="@style/OrangeActivityTheme"></activity>
+        <activity
+            android:name=".base.BaseActivity"
+            android:theme="@style/OrangeAppTheme"></activity>
+        <activity
+            android:name=".ui.activity.AboutActivity"
+            android:theme="@style/AppBaseTheme"></activity>
+        <activity android:name=".ui.activity.AddWlan"></activity>
+        <activity android:name=".ui.activity.BlankActivity"></activity>
+        <activity android:name=".ui.activity.CouponsActivity"></activity>
+        <activity
+            android:name=".ui.activity.FeedbackActivity"
+            android:label="意见反馈"></activity>
+        <activity android:name=".ui.activity.FolderSelectedActivity"></activity>
+        <activity
+            android:name=".ui.activity.HelpActivity"
+            android:label="帮助"></activity>
+        <activity android:name=".ui.activity.HelpDetailActivity"></activity>
+        <activity android:name=".ui.activity.LivePlayActivity"></activity>
+        <activity android:name=".ui.activity.JoinActivity"></activity>
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:label="登录"
+            android:theme="@style/OrangeTitleBar"></activity>
+        <activity
+            android:name=".ui.activity.ProgramDetailActivity"
+            android:label="详情"></activity>
+        <activity android:name=".ui.activity.ProgramPlayActivity"></activity>
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:label="注册"
+            android:theme="@style/OrangeTitleBar"></activity>
+        <activity
+            android:name=".ui.activity.SettingActivity"
+            android:label="设置"
+            android:theme="@style/AppBaseTheme"></activity>
+        <activity android:name=".ui.activity.WealthActivity"></activity>
+        <activity android:name="io.vov.vitamio.activity.InitActivity"></activity>
+
+        <receiver android:name=".service.AlarmReceiver"></receiver>
+    </application>
+
+</manifest>

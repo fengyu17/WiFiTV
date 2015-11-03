@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/user_regist_errorinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_controller_margin"
+        android:layout_marginStart="@dimen/register_controller_margin"
+        android:layout_marginTop="@dimen/register_controller_margin"
+        android:textColor="#ffff0033" />
+
+    <EditText
+        android:id="@+id/user_regist_account"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/register_edittext_height"
+        android:layout_marginEnd="@dimen/register_controller_margin"
+        android:layout_marginLeft="@dimen/register_controller_margin"
+        android:layout_marginRight="@dimen/register_controller_margin"
+        android:layout_marginStart="@dimen/register_controller_margin"
+        android:layout_marginTop="@dimen/register_controller_margin"
+        android:background="@drawable/activity_regist_bg_frame_unfocused"
+        android:drawableLeft="@mipmap/activity_login_icon_account"
+        android:drawablePadding="15dp"
+        android:drawableStart="@mipmap/activity_login_icon_account"
+        android:hint="@string/regist_email"
+        android:inputType="textEmailAddress"
+        android:paddingEnd="0dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="0dp"
+        android:paddingStart="15dp"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/user_regist_name"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/register_edittext_height"
+        android:layout_marginEnd="@dimen/register_controller_margin"
+        android:layout_marginLeft="@dimen/register_controller_margin"
+        android:layout_marginRight="@dimen/register_controller_margin"
+        android:layout_marginStart="@dimen/register_controller_margin"
+        android:layout_marginTop="@dimen/register_controller_margin"
+        android:background="@drawable/activity_regist_bg_frame_unfocused"
+        android:drawableLeft="@mipmap/activity_regist_icon_name"
+        android:drawablePadding="15dp"
+        android:drawableStart="@mipmap/activity_regist_icon_name"
+        android:hint="@string/regist_username"
+        android:paddingEnd="0dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="0dp"
+        android:paddingStart="15dp"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/user_regist_password"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/register_edittext_height"
+        android:layout_marginEnd="@dimen/register_controller_margin"
+        android:layout_marginLeft="@dimen/register_controller_margin"
+        android:layout_marginRight="@dimen/register_controller_margin"
+        android:layout_marginStart="@dimen/register_controller_margin"
+        android:layout_marginTop="@dimen/register_controller_margin"
+        android:background="@drawable/activity_regist_bg_frame_unfocused"
+        android:drawableLeft="@mipmap/activity_login_icon_password"
+        android:drawablePadding="15dp"
+        android:drawableStart="@mipmap/activity_login_icon_password"
+        android:hint="@string/regist_passwd"
+        android:inputType="textPassword"
+        android:paddingEnd="0dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="0dp"
+        android:paddingStart="15dp"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/user_regist_repeatpassword"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/register_edittext_height"
+        android:layout_marginEnd="@dimen/register_controller_margin"
+        android:layout_marginLeft="@dimen/register_controller_margin"
+        android:layout_marginRight="@dimen/register_controller_margin"
+        android:layout_marginStart="@dimen/register_controller_margin"
+        android:layout_marginTop="@dimen/register_controller_margin"
+        android:background="@drawable/activity_regist_bg_frame_unfocused"
+        android:drawableLeft="@mipmap/activity_login_icon_password"
+        android:drawablePadding="15dp"
+        android:drawableStart="@mipmap/activity_login_icon_password"
+        android:hint="@string/regist_repeat"
+        android:inputType="textPassword"
+        android:paddingEnd="0dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="0dp"
+        android:paddingStart="15dp"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/cb_user_regist_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/regist_agree"
+        android:textColor="@color/gray_text"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/user_regist_button"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/activity_regist_bg_button"
+        android:enabled="false"
+        android:text="@string/regist_regist"
+        android:textColor="@color/white" />
+</LinearLayout>

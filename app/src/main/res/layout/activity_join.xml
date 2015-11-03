@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_titlebar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/activity_join_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/activity_join_cooperation" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/join_ll_bg_height"
+            android:layout_marginTop="@dimen/join_ll_name_margin_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/join_tv_star_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/join_tv_margin_left"
+                android:layout_marginStart="@dimen/join_tv_margin_left"
+                android:gravity="center"
+                android:text="@string/join_star"
+                android:textColor="@color/join_star"
+                android:textSize="@dimen/join_tv_star_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/join_tv_margin_left"
+                android:layout_marginStart="@dimen/join_tv_margin_left"
+                android:gravity="center"
+                android:text="@string/join_name"
+                android:textColor="@color/join_tv"
+                android:textSize="@dimen/join_tv_common_size" />
+
+            <EditText
+                android:id="@+id/et_join_name"
+                android:layout_width="@dimen/join_et_width"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/join_et_margin_left"
+                android:layout_marginStart="@dimen/join_et_margin_left"
+                android:background="@drawable/activity_join_et_bg_non_select"
+                android:gravity="center_vertical"
+                android:hint=""
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/join_ll_bg_height"
+            android:layout_marginTop="@dimen/join_ll_common_margin_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/join_tv_star_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/join_tv_margin_left"
+                android:layout_marginStart="@dimen/join_tv_margin_left"
+                android:gravity="center"
+                android:text="@string/join_star"
+                android:textColor="@color/join_star"
+                android:textSize="@dimen/join_tv_star_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/join_tv_margin_left"
+                android:layout_marginStart="@dimen/join_tv_margin_left"
+                android:gravity="center"
+                android:text="@string/join_tel"
+                android:textColor="@color/join_tv"
+                android:textSize="@dimen/join_tv_common_size" />
+
+            <EditText
+                android:id="@+id/et_join_tel"
+                android:layout_width="@dimen/join_et_width"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/join_et_margin_left"
+                android:layout_marginStart="@dimen/join_et_margin_left"
+                android:background="@drawable/activity_join_et_bg_non_select"
+                android:gravity="center_vertical"
+                android:hint=""
+                android:inputType="phone"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/join_ll_leave_height"
+            android:layout_marginTop="@dimen/join_ll_common_margin_top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/join_tv_star_height"
+                android:layout_marginLeft="@dimen/join_tv_margin_left"
+                android:layout_marginStart="@dimen/join_tv_margin_left"
+                android:layout_marginTop="@dimen/join_tv_star_margin_top"
+                android:gravity="center"
+                android:text="@string/join_star"
+                android:textColor="@color/join_star"
+                android:textSize="@dimen/join_tv_star_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/join_tv_margin_left"
+                android:layout_marginStart="@dimen/join_tv_margin_left"
+                android:layout_marginTop="@dimen/join_tv_leave_margin_top"
+                android:gravity="center"
+                android:text="@string/join_leave"
+                android:textColor="@color/join_tv"
+                android:textSize="@dimen/join_tv_common_size" />
+
+            <EditText
+                android:id="@+id/et_join_leave"
+                android:layout_width="@dimen/join_et_width"
+                android:layout_height="@dimen/join_et_leave_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/join_et_margin_left"
+                android:layout_marginStart="@dimen/join_et_margin_left"
+                android:background="@drawable/activity_join_et_bg_non_select"
+                android:gravity="top"
+                android:hint="@string/join_leave_et_hint" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_join_commit"
+            android:layout_width="@dimen/join_bt_commit_width"
+            android:layout_height="@dimen/join_bt_commit_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/join_bt_commit_margin_top"
+            android:background="@drawable/activity_join_bt_bg"
+            android:enabled="false"
+            android:text="@string/join_button_text"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

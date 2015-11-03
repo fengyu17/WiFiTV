@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--
+        <include layout="@layout/activity_titlebar" />
+    -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_framelayout_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="@dimen/setting_margin"
+            android:gravity="center"
+            android:text="@string/setting_checkwifi"
+            android:textColor="@color/gray_setting_text" />
+
+        <CheckBox
+            android:id="@+id/cb_setting_checkwifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/setting_margin" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/gray_stroke" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_framelayout_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="@dimen/setting_margin"
+            android:gravity="center"
+            android:text="@string/setting_notice"
+            android:textColor="@color/gray_setting_text" />
+
+        <CheckBox
+            android:id="@+id/cb_setting_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/setting_margin" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/gray_stroke" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_framelayout_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="@dimen/setting_margin"
+            android:gravity="center"
+            android:text="@string/setting_update"
+            android:textColor="@color/gray_setting_text" />
+
+        <CheckBox
+            android:id="@+id/cb_setting_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/setting_margin" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/gray_stroke" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_setting_downloadpath"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_framelayout_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="@dimen/setting_margin"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/setting_downloadpath"
+            android:textColor="@color/gray_setting_text" />
+
+        <TextView
+            android:id="@+id/tv_setting_downloadpath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/setting_margin"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/setting_default" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/gray_stroke" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_setting_clearcache"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_framelayout_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="@dimen/setting_margin"
+            android:gravity="center"
+            android:text="@string/setting_clearcache"
+            android:textColor="@color/gray_setting_text" />
+
+        <TextView
+            android:id="@+id/tv_setting_clearcache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/setting_margin"
+            android:gravity="center" />
+
+        <ProgressBar
+            android:id="@+id/pb_clearcache"
+            style="?android:attr/progressBarStyleSmallTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/setting_margin"
+            android:gravity="center"
+            android:visibility="gone" />
+        "
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/gray_stroke" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_setting_reset"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_framelayout_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="@dimen/setting_margin"
+            android:gravity="center"
+            android:text="@string/setting_reset"
+            android:textColor="@color/gray_setting_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/gray_stroke" />
+    </FrameLayout>
+
+</LinearLayout>

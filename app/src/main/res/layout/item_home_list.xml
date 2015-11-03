@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_home_list_wifi"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/item_home_list_select"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/iv_home_list_wifi_icon"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:src="@mipmap/home_list_db_4_nopasswd" />
+
+    <TextView
+        android:id="@+id/tv_home_list_wifi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/iv_home_list_wifi_icon"
+        android:layout_toRightOf="@id/iv_home_list_wifi_icon"
+        android:text="XXXXX"
+        android:textColor="@color/home_fragemnt_tv_wifi_name"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_home_list_wifi_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_home_list_wifi_name"
+        android:layout_alignStart="@id/tv_home_list_wifi_name"
+        android:layout_below="@+id/tv_home_list_wifi_name"
+        android:text="开放"
+        android:textColor="@color/home_fragemnt_tv_wifi_state"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/iv_home_list_wifi_area"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@id/tv_home_list_wifi_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/tv_home_list_wifi_name"
+        android:layout_toRightOf="@id/tv_home_list_wifi_name"
+        android:background="@mipmap/home_list_area"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_home_list_wifi_recommendation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_home_list_wifi_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/iv_home_list_wifi_area"
+        android:layout_toRightOf="@id/iv_home_list_wifi_area"
+        android:text="推荐"
+        android:textColor="@color/home_fragemnt_tv_wifi_state"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_home_list_wifi_skip"
+        android:layout_width="8dp"
+        android:layout_height="12dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/home_list_skip" />
+</RelativeLayout>

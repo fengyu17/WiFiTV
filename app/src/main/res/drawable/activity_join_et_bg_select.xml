@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 实心 -->
+    <solid android:color="@color/join_et_bg_select" />
+    <!-- 边框 -->
+    <stroke android:width="0.5dp"
+        android:color="@color/titlebar_divider"/>
+    <!-- 弧度 -->
+    <corners android:radius="3dp" />    
+    <!-- 边距 -->
+    <padding android:left="5dp" 
+        />
+
+</shape>

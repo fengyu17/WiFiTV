@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/program_navigationbar_background"
+    android:orientation="vertical">
+    <!--
+        <include layout="@layout/fragment_titlebar_home" />
+    -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/fragment_home_rl_wifi_title_bg">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginStart="1dp">
+
+            <ToggleButton
+                android:id="@+id/tb_fragment_home_wifi_control_toggle"
+                android:layout_width="50dp"
+                android:layout_height="11dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/fragment_home_wifi_control_toggle"
+                android:gravity="start|center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#ffffff"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/ib_fragment_home_wifi_control_button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignEnd="@id/tb_fragment_home_wifi_control_toggle"
+                android:layout_alignRight="@id/tb_fragment_home_wifi_control_toggle"
+                android:background="@drawable/fragment_home_wifi_control_on" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_fragment_home_wifi_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="无线网络已开启"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_fragment_home_wifilist_state"
+            android:layout_width="19dp"
+            android:layout_height="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/fragment_home_wifilist_shrink" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fragment_wifi_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/fragment_home_ll_wifi_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_fragment_wifi_list_title_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="WLAN网络"
+                android:textColor="#ffff6a5b"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_fragment_wifi_list_progresbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="扫描完成"
+                android:textColor="#ffff6a5b" />
+
+            <ProgressBar
+                android:id="@+id/pb_fragment_wifi_list_progresbar_bar"
+                style="@style/SelfProgressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/tv_fragment_wifi_list_progresbar_title"
+                android:layout_toStartOf="@id/tv_fragment_wifi_list_progresbar_title"
+                android:indeterminateDrawable="@drawable/fragment_home_wifi_progressbar_anim"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_wifilist"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="1.5dp"
+            android:layout_marginLeft="1.5dp"
+            android:layout_marginRight="1.5dp"
+            android:layout_marginStart="1.5dp"
+            android:background="#ffffffff"
+            android:divider="@null"
+            android:scrollbars="none" />
+    </LinearLayout>
+    <!--  <WebView 
+        android:id="@+id/home_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        /> -->
+
+</LinearLayout>

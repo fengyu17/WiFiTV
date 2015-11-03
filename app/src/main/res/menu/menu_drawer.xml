@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainTabActivity">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_game"
+            android:icon="@mipmap/userinfo_game_picture"
+            android:title="@string/app_menu_game"></item>
+        <item
+            android:id="@+id/item_app"
+            android:icon="@mipmap/userinfo_app_picture"
+            android:title="@string/app_menu_app"></item>
+        <item
+            android:id="@+id/item_settings"
+            android:icon="@mipmap/userinfo_set_picture"
+            android:title="@string/app_menu_settins"></item>
+        <item
+            android:id="@+id/item_feedback"
+            android:icon="@mipmap/userinfo_feedback_picture"
+            android:title="@string/app_menu_feedback"></item>
+        <item
+            android:id="@+id/item_help"
+            android:icon="@mipmap/userinfo_help_picture"
+            android:title="@string/app_menu_help"></item>
+        <item
+            android:id="@+id/item_about"
+            android:icon="@mipmap/userinfo_about_picture"
+            android:title="@string/app_menu_about"></item>
+
+    </group>
+
+</menu>

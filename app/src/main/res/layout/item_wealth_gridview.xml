@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_wealth_good_cover"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="6"
+        android:scaleType="fitXY"
+        android:src="@mipmap/provisional_pic" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_wealth_good_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/activity_wealth_coin" />
+
+        <TextView
+            android:id="@+id/tv_wealth_good_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_wealth_good_coin"
+            android:gravity="left|center_vertical"
+            android:text="4000"
+            android:textColor="@color/orange" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_wealth_good_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:text="【恒源祥】吸水毛巾三件套"
+        android:textColor="@color/black" />
+
+</LinearLayout>

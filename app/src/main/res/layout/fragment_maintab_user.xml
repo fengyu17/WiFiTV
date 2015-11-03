@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/program_navigationbar_background"
+    android:orientation="vertical">
+    <!--
+        <include layout="@layout/fragment_titlebar_life_my" />
+    -->
+    <RelativeLayout
+        android:id="@+id/userinfo_rl_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/userinfo_circleimage_background">
+
+        <com.geeya.wifitv.widget.CircleImageView
+            android:id="@+id/circleimage"
+            android:layout_width="@dimen/userinfo_circleimage_size"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/userinfo_circleimage_margin"
+            android:layout_marginLeft="@dimen/userinfo_circleimage_margin"
+            android:layout_marginStart="@dimen/userinfo_circleimage_margin"
+            android:src="@mipmap/userinfo_headpicture"
+            app:border_color="@color/orange"
+            app:border_width="2dp" />
+
+        <ImageView
+            android:id="@+id/user_location_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_alignBottom="@id/circleimage"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/userinfo_circleimage_margin"
+            android:layout_marginStart="@dimen/userinfo_circleimage_margin"
+            android:layout_toEndOf="@id/circleimage"
+            android:layout_toRightOf="@id/circleimage"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/user_location_picture" />
+
+        <TextView
+            android:id="@+id/user_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/user_location_picture"
+            android:layout_toEndOf="@id/user_location_picture"
+            android:layout_toRightOf="@id/user_location_picture"
+            android:text="@string/user_location"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/user_location"
+            android:layout_alignLeft="@id/user_location"
+            android:layout_alignStart="@id/user_location"
+            android:text="@string/user_name"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/user_coupons"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/fragment_user_item_bg"
+        android:drawableEnd="@mipmap/activity_setting_next"
+        android:drawableLeft="@mipmap/userinfo_coupons_picture"
+        android:drawablePadding="25dp"
+        android:drawableRight="@mipmap/activity_setting_next"
+        android:drawableStart="@mipmap/userinfo_coupons_picture"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/userinfo_image_distance_edging"
+        android:paddingLeft="@dimen/userinfo_image_distance_edging"
+        android:paddingRight="@dimen/userinfo_image_distance_edging"
+        android:paddingStart="@dimen/userinfo_image_distance_edging"
+        android:text="@string/user_coupons"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <include layout="@layout/include_fragment_userinfo_imageview" />
+
+    <TextView
+        android:id="@+id/user_wealth"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/fragment_user_item_bg"
+        android:drawableEnd="@mipmap/activity_setting_next"
+        android:drawableLeft="@mipmap/userinfo_wealth_picture"
+        android:drawablePadding="25dp"
+        android:drawableRight="@mipmap/activity_setting_next"
+        android:drawableStart="@mipmap/userinfo_wealth_picture"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/userinfo_image_distance_edging"
+        android:paddingLeft="@dimen/userinfo_image_distance_edging"
+        android:paddingRight="@dimen/userinfo_image_distance_edging"
+        android:paddingStart="@dimen/userinfo_image_distance_edging"
+        android:text="@string/user_wealth"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <include layout="@layout/include_fragment_userinfo_imageview" />
+
+    <TextView
+        android:id="@+id/user_collection"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/fragment_user_item_bg"
+        android:drawableEnd="@mipmap/activity_setting_next"
+        android:drawableLeft="@mipmap/userinfo_collection_picture"
+        android:drawablePadding="25dp"
+        android:drawableRight="@mipmap/activity_setting_next"
+        android:drawableStart="@mipmap/userinfo_collection_picture"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/userinfo_image_distance_edging"
+        android:paddingLeft="@dimen/userinfo_image_distance_edging"
+        android:paddingRight="@dimen/userinfo_image_distance_edging"
+        android:paddingStart="@dimen/userinfo_image_distance_edging"
+        android:text="@string/user_collection"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/user_set"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/fragment_user_item_bg"
+        android:drawableEnd="@mipmap/activity_setting_next"
+        android:drawableLeft="@mipmap/userinfo_set_picture"
+        android:drawablePadding="25dp"
+        android:drawableRight="@mipmap/activity_setting_next"
+        android:drawableStart="@mipmap/userinfo_set_picture"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/userinfo_image_distance_edging"
+        android:paddingLeft="@dimen/userinfo_image_distance_edging"
+        android:paddingRight="@dimen/userinfo_image_distance_edging"
+        android:paddingStart="@dimen/userinfo_image_distance_edging"
+        android:text="@string/user_set"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/user_help"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/fragment_user_item_bg"
+        android:drawableEnd="@mipmap/activity_setting_next"
+        android:drawableLeft="@mipmap/userinfo_help_picture"
+        android:drawablePadding="25dp"
+        android:drawableRight="@mipmap/activity_setting_next"
+        android:drawableStart="@mipmap/userinfo_help_picture"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/userinfo_image_distance_edging"
+        android:paddingLeft="@dimen/userinfo_image_distance_edging"
+        android:paddingRight="@dimen/userinfo_image_distance_edging"
+        android:paddingStart="@dimen/userinfo_image_distance_edging"
+        android:text="@string/user_help"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone" />
+    <!--
+        <include layout="@layout/include_fragment_userinfo_imageview" />
+    -->
+    <TextView
+        android:id="@+id/user_about"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/fragment_user_item_bg"
+        android:drawableEnd="@mipmap/activity_setting_next"
+        android:drawableLeft="@mipmap/userinfo_about_picture"
+        android:drawablePadding="25dp"
+        android:drawableRight="@mipmap/activity_setting_next"
+        android:drawableStart="@mipmap/userinfo_about_picture"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/userinfo_image_distance_edging"
+        android:paddingLeft="@dimen/userinfo_image_distance_edging"
+        android:paddingRight="@dimen/userinfo_image_distance_edging"
+        android:paddingStart="@dimen/userinfo_image_distance_edging"
+        android:text="@string/user_about"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/user_feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/fragment_user_item_bg"
+        android:drawableEnd="@mipmap/activity_setting_next"
+        android:drawableLeft="@mipmap/userinfo_feedback_picture"
+        android:drawablePadding="25dp"
+        android:drawableRight="@mipmap/activity_setting_next"
+        android:drawableStart="@mipmap/userinfo_feedback_picture"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/userinfo_image_distance_edging"
+        android:paddingLeft="@dimen/userinfo_image_distance_edging"
+        android:paddingRight="@dimen/userinfo_image_distance_edging"
+        android:paddingStart="@dimen/userinfo_image_distance_edging"
+        android:text="@string/user_feedback"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/userinfo_loginbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/userinfo_button_shape"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25" />
+
+</LinearLayout>

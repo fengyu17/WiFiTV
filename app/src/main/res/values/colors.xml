@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="yellow_status">#FBA632</color>
+    <color name="yellow_actionbar">#FCA635</color>
+
+    <color name="background_tab_pressed">#c3faa22d</color>
+
+    <color name="red">#ffff0033</color>
+    <color name="black">#000000</color>
+    <color name="green">#ff00cc00</color>
+    <color name="black_transparent">#88000000</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="orange">#fba534</color>
+    <color name="orange_stroke">#faa02d</color>
+
+    <color name="gray_text_movie">#666666</color>
+    <color name="gray_select">#f1f1f1</color>
+    <color name="gray_live_dividing">#a8a8a8</color>
+    <color name="gray_background">#f5f5f5</color>
+    <color name="gray_text">#9a9a9a</color>
+    <color name="gray_setting_text">#4d4d4d</color>
+    <color name="gray_dividingline">#dcd8d8</color>
+    <color name="gray_tabs_text">#949494</color>
+    <color name="gray_stroke">#d7d7d7</color>
+
+    <color name="userinfo_manage_bg">#ffcccccc</color>
+
+    <color name="live_fragment_bg">#f0f0f0</color>
+
+    <color name="home_fragment_rl_wifi_title_bg">#ffff6a5b</color>
+    <color name="home_fragemnt_rl_wifi_select">#ffbfbfbf</color>
+    <color name="home_fragemnt_rl_wifi_non_select">#ffffffff</color>
+    <color name="home_fragemnt_tv_wifi_state">#ff8b8b8b</color>
+    <color name="home_fragemnt_tv_wifi_name">#ff656565</color>
+
+    <!-- actionbar -->
+    <color name="bg_titlebar">#ffefefef</color>
+    <color name="titlebar_divider">#ffe4e4e4</color>
+
+    <!-- activity_join_et_bg -->
+    <color name="join_star">#ffef4d4d</color>
+    <color name="join_tv">#ff4c4c4c</color>
+    <color name="join_et_bg_select">#ffe5e2dd</color>
+    <color name="join_bt_bg_enable">#ff009966</color>
+
+    <!-- fragment_cash -->
+    <color name="cash_lv_item_bg">#ff5ad6e1</color>
+
+    <!-- activity_login/regist -->
+    <color name="gray_line">#ffd0d0d0</color>
+    <color name="yellow_solid">#fffff5e1</color>
+
+    <!-- fragment_home -->
+    <color name="red_line">#ffff6a5b</color>
+    <color name="red_solid">#ffffcfca</color>
+
+    <!-- activity_programdetail -->
+    <color name="gray_edge">#ffd9d9d9</color>
+    <color name="gray_bg">#ffeaeaea</color>
+
+</resources>

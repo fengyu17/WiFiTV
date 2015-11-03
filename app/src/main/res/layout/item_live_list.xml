@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:layout_gravity="center"
+    android:background="@color/gray_background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/fragment_live_list_item_selector"
+        android:gravity="center_vertical" >
+
+        <FrameLayout
+            android:id="@+id/fl_live_list_icon"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="5dp" >
+
+            <ImageView
+                android:id="@+id/iv_live_list_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_live_list_dividingline"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/fl_live_list_icon"
+            android:background="@color/gray_select" />
+
+        <TextView
+            android:id="@+id/tv_live_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/iv_live_list_dividingline"
+            android:gravity="center|left"
+            android:paddingLeft="45dp"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <FrameLayout
+            android:id="@+id/fl_live_list_button"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:id="@+id/iv_live_list_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/fragment_live_list_button_selector" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>

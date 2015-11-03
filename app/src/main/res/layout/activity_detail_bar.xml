@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp" 
+    android:background="@color/orange">
+    <TextView 
+        android:id="@+id/detail_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingStart="15dp"
+        android:paddingRight="0dp"
+        android:paddingEnd="0dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@mipmap/activity_detail_title_back"
+        android:drawableStart="@mipmap/activity_detail_title_back"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/detail"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+</FrameLayout>

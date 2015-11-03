@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_titlebar" />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/activity_feedback_editbar"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/feedback_advice"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:layout_marginEnd="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="18sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="反馈意见"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/feedback_count"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="bottom|end"
+            android:text="0/150"
+            android:textColor="@color/gray_text" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/feedback_send"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/activity_regist_bg_button"
+        android:enabled="false"
+        android:text="发 送"
+        android:textColor="@color/white" />
+
+</LinearLayout>

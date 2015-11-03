@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_titlebar" />
+
+    <FrameLayout
+        android:id="@+id/fl_help_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_framelayout_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginLeft="@dimen/setting_margin"
+            android:layout_marginStart="@dimen/setting_margin"
+            android:gravity="center"
+            android:text="@string/help_account"
+            android:textColor="@color/gray_setting_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/help_image_height"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="@dimen/setting_margin"
+            android:layout_marginRight="@dimen/setting_margin"
+            android:scaleType="centerInside"
+            android:src="@mipmap/activity_setting_next" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/gray_stroke" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_help_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_framelayout_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginLeft="@dimen/setting_margin"
+            android:layout_marginStart="@dimen/setting_margin"
+            android:gravity="center"
+            android:text="@string/help_alipay"
+            android:textColor="@color/gray_setting_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/help_image_height"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="@dimen/setting_margin"
+            android:layout_marginRight="@dimen/setting_margin"
+            android:scaleType="centerInside"
+            android:src="@mipmap/activity_setting_next" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/gray_stroke" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_help_video"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_framelayout_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginLeft="@dimen/setting_margin"
+            android:layout_marginStart="@dimen/setting_margin"
+            android:gravity="center"
+            android:text="@string/help_video"
+            android:textColor="@color/gray_setting_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/help_image_height"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="@dimen/setting_margin"
+            android:layout_marginRight="@dimen/setting_margin"
+            android:scaleType="centerInside"
+            android:src="@mipmap/activity_setting_next" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/gray_stroke" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_help_download"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_framelayout_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginLeft="@dimen/setting_margin"
+            android:layout_marginStart="@dimen/setting_margin"
+            android:gravity="center"
+            android:text="@string/help_download"
+            android:textColor="@color/gray_setting_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/help_image_height"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="@dimen/setting_margin"
+            android:layout_marginRight="@dimen/setting_margin"
+            android:scaleType="centerInside"
+            android:src="@mipmap/activity_setting_next" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/gray_stroke" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_help_cooperation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_framelayout_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginLeft="@dimen/setting_margin"
+            android:layout_marginStart="@dimen/setting_margin"
+            android:gravity="center"
+            android:text="@string/help_cooperation"
+            android:textColor="@color/gray_setting_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/help_image_height"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="@dimen/setting_margin"
+            android:layout_marginRight="@dimen/setting_margin"
+            android:scaleType="centerInside"
+            android:src="@mipmap/activity_setting_next" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:background="@color/gray_stroke" />
+    </FrameLayout>
+
+</LinearLayout>
